@@ -5,8 +5,7 @@ import { _, empties } from './utils.js';
 lodashStable.each(['find', 'findIndex', 'findKey', 'findLast', 'findLastIndex', 'findLastKey'], function(methodName) {
   describe('lodash.' + methodName);
 
-  var array = [1, 2, 3, 4],
-      func = _[methodName];
+  var func = _[methodName];
 
   var objects = [
     { 'a': 0, 'b': 0 },
